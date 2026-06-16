@@ -78,7 +78,7 @@ export function ResumeAnalyzer() {
           {apiOnline === false && (
             <div className="mx-auto mt-4 flex max-w-xl items-center justify-center gap-2 rounded-lg border border-red-500/30 bg-red-500/10 px-4 py-2 text-sm text-red-200">
               <AlertCircle className="h-4 w-4" />
-              Backend offline. Start FastAPI at {process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:8000'}
+              Backend offline. Start FastAPI at {process.env.NEXT_PUBLIC_API_URL ?? `${process.env.NEXT_PUBLIC_API_URL}/analyze}
             </div>
           )}
         </motion.header>
